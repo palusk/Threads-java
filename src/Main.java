@@ -1,24 +1,33 @@
-import java.io.FileWriter;
+import java.awt.event.KeyAdapter;
+import java.io.*;
+import java.util.Scanner;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
-public class Main {
-    public static void main(String[] args) {
+public class Main extends KeyAdapter {
+    public static void main(String[] args) throws IOException {
 
-        System.out.println("Hello world!");
-        MyThread thread = new MyThread('a');
-        MyThread thread2 = new MyThread('b');
-        thread.start();
-        thread2.start();
+        System.out.println("How many threads do you want to start?");
+        Scanner sc = new Scanner(System.in);
+        int threadsNumber = sc.nextInt();
 
 
 
-        /*
-    try {
+        ExecutorService executorService = Executors.newFixedThreadPool(threadsNumber);
+        for(int i=0; i<threadsNumber; i++){
+            executorService.submit(()-> FileReader.readFile(Thread.currentThread().getName()));
+        }
 
-        FileWriter f = new FileWriter("fileThreads.txt");
-    }catch (Exception e) {
-        System.out.println("ERROR");
-    }
-    */
 
-    }
+
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+        String line = "";
+
+        while (line.equalsIgnoreCase("quit") == false) {
+            line = in.readLine();
+            executorService.shutdownNow();
+            System.out.println("koniec");
+        }
+
+}
 }
