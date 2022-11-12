@@ -23,10 +23,11 @@ public class Main extends KeyAdapter {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         String line = "";
 
-        while (line.equalsIgnoreCase("quit") == false) {
+        while (true) {
             line = in.readLine();
-            executorService.shutdownNow();
-            System.out.println("koniec");
+            if(line.equals("k")) {
+                executorService.shutdownNow();
+            }
         }
 
 }

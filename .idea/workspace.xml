@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a197ef22-1de1-459c-8911-0115cac64ce7" name="Changes" comment="last">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IsKeyPressed.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +52,7 @@
       <workItem from="1668173115028" duration="14674000" />
       <workItem from="1668189294230" duration="1522000" />
       <workItem from="1668253483771" duration="247000" />
+      <workItem from="1668253901250" duration="614000" />
     </task>
     <task id="LOCAL-00001" summary="fsfsf">
       <created>1668109095713</created>
@@ -72,7 +75,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668196438284</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="last">
+      <created>1668253908583</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668253908583</updated>
+    </task>
+    <task id="LOCAL-00005" summary="last">
+      <created>1668254005295</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668254005295</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
